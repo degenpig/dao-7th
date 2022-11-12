@@ -1,0 +1,98 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.6;
+
+/* import "./MintingNFT.sol"; */
+
+struct ProposalData {
+        uint256 index;
+        string title;
+        string content;
+        string[] options;
+        address[] voters;
+        uint256[] weights;
+        bool opened;
+    }
+
+contract Proposal {
+
+
+    ProposalData[] public _proposals;
+ 
+    address public owner;
+ 
+    mapping(address => mapping(uint256 => uint256)) voted;
+    mapping(uint256 => mapping(uint256 => uint256)) vote_count;
+    mapping(uint256 => mapping(address => bool)) isVoter;
+
+    uint256[] vote_result;
+    uint256 total_count;
+    uint256 total_sum;
+
+    constructor(){
+        owner = msg.sender;
+    }
+
+    modifier onlyOwner() {
+        require(owner == msg.sender, "only owner");
+        _;
+    }
+ 
+    /* function openProposalTest(uint256 x) external pure returns (uint256 y){
+        y = x+x;
+    } */
+
+    function openProposal(ProposalData memory proposal) external onlyOwner  {
+        _proposals.push(proposal);
+        uint n = proposal.voters.length;
+        for(uint i = 0; i < n; i++) {
+            isVoter[proposal.index][proposal.voters[i]] = true;
+        }
+    }
+
+    function closeProposal(uint256 proposal_index) public onlyOwner{
+        uint256 nProposals = _proposals.length;
+        for(uint256 i = 0; i < nProposals; i++) {
+            if(proposal_index == _proposals[i].index) {
+                _proposals[i].opened = false;
+                break;
+            }
+        }
+    }
+
+    function calc_result(uint256 proposal_index) public view returns (uint256[] memory values){
+        uint256 nProposals = _proposals.length;
+        uint256 i;
+        for(i = 0; i < nProposals; i++) {
+            if(proposal_index == _proposals[i].index) break;
+        }
+        require(i < nProposals, "Invalid Proposal index");
+        ProposalData storage proposal = _proposals[i];
+        uint256 n = proposal.voters.length;
+
+        values = new uint256[](proposal.options.length + 1);
+ 
+        for(i = 0; i < n; i++){
+            uint256 selected = voted[proposal.voters[i]][proposal_index]; 
+            values[selected] += proposal.weights[i];
+        }
+    }
+
+    function vote(uint256 proposal_index, uint256 option) public{
+        address voter = msg.sender;
+        require(isVoter[proposal_index][voter] == true, "Not allowed");
+        require(voted[voter][proposal_index] == 0, "Already voted");
+        uint256 nProposals = _proposals.length;
+        uint256 i;
+
+        for(i = 0; i < nProposals; i++) {
+            if(proposal_index == _proposals[i].index) break;
+        }
+
+        require(i < nProposals, "Invalid Proposal index");
+        require(_proposals[i].opened == false, "Proposal is closed");
+        require(option < _proposals[i].options.length, "Invalid Option index");
+        
+        voted[voter][proposal_index] = option + 1;
+        vote_count[proposal_index][option]++;
+    }
+}

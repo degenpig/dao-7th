@@ -1,0 +1,702 @@
+@media only screen and (min-width:1px) and (max-width:700px){
+    #abc_small { display: block; }
+    #abc_medium { display: none; }
+    #abc_large { display: none; }
+    #def_small { display: block; }
+    #def_medium { display: none; }
+    #def_large { display: none; }
+    #ghi_small { display: block; }
+    #ghi_medium { display: none; }
+    #ghi_large { display: none; }
+}
+@media only screen and (min-width:701px) and (max-width:1000px){
+    #abc_small { display: none; }
+    #abc_medium { display: block; }
+    #abc_large { display: none; }
+    #def_small { display: none; }
+    #def_medium { display: block; }
+    #def_large { display: none; }
+    #ghi_small { display: none; }
+    #ghi_medium { display: block; }
+    #ghi_large { display: none; }
+}
+@media only screen and (min-width:1001px) and (max-width:2000px){
+    #abc_small { display: none; }
+    #abc_medium { display: none; }
+    #abc_large { display: block; }
+    #def_small { display: none; }
+    #def_medium { display: none; }
+    #def_large { display: block; }
+    #ghi_small { display: none; }
+    #ghi_medium { display: none; }
+    #ghi_large { display: block; }
+}
+@media only screen and (min-width:1px) and (max-width:1000px){
+    #footerdiv1 { justify-content: center; }
+    #footerdiv2 { text-align: center; }
+    #footerdiv3 { justify-content: center; }
+}
+
+@media only screen and (min-width:1px) and (max-width:1000px){
+    #headerdiv {
+        display: flex;
+        justify-content: space-between;
+    }
+    #menudiv{
+        display: block;
+    }
+    #navbar{
+        display: none;
+    }
+}
+@media only screen and (min-width:1001px) and (max-width:2000px){
+    #menudiv{
+        display: none;
+    }
+    #navbar{
+        display: none;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+}
+
+/* #backcolor{
+    background-color:#F9DDD0;
+} */
+
+#back1{
+    background-image: url(../images/homeback.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+#footerfooter{
+    background-image: url(../images/footerback.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+/* #title{
+    color: #F9DDD0;
+}
+#title2{
+    color: #F9DDD0;
+}
+ */
+
+
+.header_menu{border:1px solid #777}
+.header_menu1{border-radius:50px;border-bottom-right-radius:0;border-top-right-radius:0;border-right:0}
+.header_menu2{border-radius:50px;border-bottom-left-radius:0;border-top-left-radius:0;border-left:0}
+.header_menu ul{display:flex;align-items:center;min-height:70px}
+.header_menu ul li{margin:0 32px}
+.header_menu2 ul li:last-child{margin-right:32px}
+.header_menu ul li a{font-size:17px;color:#777;font-weight:500}
+.header_logo{padding:10px}
+.header_inner{position:relative}
+
+.mytopnavresponsive{
+    display: block;
+}
+.mytopnav{
+    display: none;
+}
+
+.navbar2li{
+    margin: 10px;
+    text-align: center;
+}
+
+
+/* #footerdiv2{
+    color: #F9DDD0;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#members_title{
+    font-size: 50px;
+}
+
+#founderbroker_title{
+    font-size: 50px;
+}
+
+#roadmap_title{
+    font-size: 50px;
+}
+
+#unique_title{
+    font-size: 50px;
+}
+
+#brandmission_title{
+    font-size: 50px;
+}
+
+#benefitsagent_title{
+    font-size: 50px;
+}
+#benefitsutilities_title{
+    font-size: 50px;
+}
+
+#features_title{
+    font-size: 50px;
+}
+#features_text1{
+    font-size: 18px;
+    text-align: center;
+}
+
+#features_margin{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#features_title{
+    text-align: center;
+}
+
+#features_flex{
+    display: flex;
+}
+#features_margin2{
+    margin: 25px;
+    font-size: 18px;
+}
+#featureblocks_flex{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+}
+.featureblocks_container{
+    margin: 25px;
+    background-color: #FCF0EA;
+    border: #777 solid 1px;
+}
+
+.featureblocks_nft{
+    padding: 10px;
+}
+.featureblocks_button{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+.featureblocks_button1{
+    padding: 12.5px;
+    text-align: center;
+    color: blue;
+    border-radius:12.5px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    justify-self: center;
+    font-size: 20px;
+}
+.featureblocks_mintbtn{
+    margin: 10px;
+}
+.featureblocks_buttoncontainer{
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+#benefitsutilities_total{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#benefitsutilities_title{
+    text-align: center;
+}
+#benefitsutilities_content{
+    text-align: center;
+    font-size: 18px;
+}
+#benefitsagent_total{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#benefitsagent_title{
+    text-align: center;
+}
+#benefitsagent_subtitle{
+    text-align: center;
+    font-size: 18px;
+}
+#benefitsagent_flex{
+    display: flex;
+    margin: 25px;
+}
+#brandmission_total{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#brandmission_title{
+    text-align: center;
+}
+#brandmission_subtitle{
+    text-align: center;
+    font-size: 18px;
+}
+#brandmission_flex{
+    display: flex;
+    margin: 25px;
+}
+#unique_total{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#unique_title{
+    text-align: center;
+}
+#unique_subtitle{
+    text-align: center;
+    font-size: 18px;
+}
+#unique_flex{
+    display: flex;
+    margin: 25px;
+}
+#roadmap_total{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#roadmap_title{
+    text-align: center;
+}
+#roadmap_subtitle{
+    text-align: center;
+    font-size: 18px;
+}
+#founderbroker_total{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#founderbroker_title{
+    text-align: center;
+}
+#founderbroker_subtitle{
+    text-align: center;
+    font-size: 18px;
+}
+#members_total{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#members_title{
+    text-align: center;
+}
+#members_subtitle{
+    text-align: center;
+    font-size: 18px;
+}
+#members_flex{
+    display: flex;
+    margin: 25px;
+}
+
+#sociallinks{
+    display: flex;
+    justify-content: flex-end;
+}
+#headerback{
+    background-image: url(../images/homeback.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+#avatar_twitter{
+
+}
+#avatar_discord{
+    
+}
+#avatar_opensea{
+    
+}
+#avatar_instagram{
+    
+}
+.icon{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#newheader_1{
+    text-align: center;
+    font-size: 30px;
+}
+#newheader_2{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+}
+#newheader_3{
+    text-align: center;
+    font-size: 60px;
+    color: blue;
+    font-weight: bold;
+}
+#newheader_4{
+    text-align: center;
+    font-size: 30px;
+}
+
+#roadmap_2{
+    background-image: url(../images/flag.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+#benefitsagent_content{
+    padding: 20px;
+    font-size: 18px;
+}
+#brandmission_content{
+    padding: 20px;
+    font-size: 18px;
+}
+#unique_content{
+    padding: 20px;
+    font-size: 18px;
+}
+#members_content{
+    padding: 20px;
+    font-size: 18px;
+}
+
+#footer_up_left_buttons{
+    display: flex;
+}
+#footer_up_left_buttons_discord{
+    margin: 12px;
+    padding: 12px 48px;
+    background: blue;
+    color: white;
+    border-radius: 25px;
+    font-size: 24px;
+}
+#footer_up_left_buttons_opensea{
+    margin: 12px;
+    padding: 12px 48px;
+    background: blue;
+    color: white;
+    border-radius: 25px;
+    font-size: 24px;
+}
+.footer_up_left_p{
+    font-size: 36px;
+}
+#footer_up_left_p2{
+    font-size: 18px;
+}
+#footer_up{
+    display: flex;
+}
+.footer_up_right_p{
+    font-size: 36px;
+}
+#footer_up_right_buttons_buy{
+    margin: 12px;
+    padding: 12px 48px;
+    background: blue;
+    color: white;
+    border-radius: 25px;
+    font-size: 24px;
+    text-align: center;
+}
+#footer_down{
+    display: flex;
+}
+#footer_down_center{
+    display: flex;
+    width:20%;
+    align-items: center;
+    justify-content: center;
+}
+#footer_down_left{
+    width:40%;
+    text-align: center;
+    font-size: 18px;
+    padding: 30px 50px;
+}
+#footer_down_right{
+    width: 40%;
+    text-align: center;
+    font-size: 18px;
+    padding: 30px 50px;
+}
+#footer_up_center{
+    width:20%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    
+}
+#footer_up_left{
+    width:40%;
+    padding: 30px 50px;
+}
+#footer_up_right{
+    width: 40%;
+    padding: 30px 50px;
+}
+#footer_up_center_img{
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+}
+#footer{
+    background-image: url(../images/footerback.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+#footer_down_center a{
+    padding: 10px;
+}
+
+@media only screen and (min-width:1px) and (max-width:1000px){
+    #featureblocks_flex{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (min-width:1px) and (max-width:1000px){
+    #newheader_1{
+        font-size: 20px;
+    }
+    #newheader_2{
+        font-size: 32px;
+    }
+    #newheader_3{
+        font-size: 32px;
+    }
+    #newheader_4{
+        font-size: 20px;
+    }
+    #unique_total{
+        margin: 20px;
+    }
+    
+    #features_title{
+        font-size: 30px;
+    }
+    #features_text1{
+        font-size: 16px;
+    }
+    #features_margin{
+        margin: 20px;
+    }
+    #features_flex{
+        flex-direction: column;
+    }
+    #features_margin2 p{
+        font-size: 16px;
+    }
+    #featureblocks_flex{
+        flex-direction: column;
+    }
+    #benefitsutilities_total{
+        margin: 20px;
+    }
+    #benefitsutilities_title{
+        font-size: 30px;
+    }
+    #benefitsutilities_content{
+        font-size: 16px;
+    }
+    #benefitsagent_total{
+        margin: 20px;
+    }
+    #benefitsagent_title{
+        font-size: 30px;
+    }
+    #benefitsagent_subtitle{
+        font-size: 16px;
+    }
+    #benefitsagent_flex{
+        flex-direction: column;
+    }
+    #benefitsagent_content{
+        font-size: 16px;
+    }
+
+    #brandmission_total{
+        margin: 20px;
+    }
+    #brandmission_title{
+        font-size: 30px;
+    }
+    #brandmission_subtitle{
+        font-size: 16px;
+    }
+    #brandmission_flex{
+        flex-direction: column;
+    }
+    #brandmission_content{
+        font-size: 16px;
+    }
+
+    #unique_total{
+        margin: 20px;
+    }
+    #unique_title{
+        font-size: 30px;
+    }
+    #unique_subtitle{
+        font-size: 16px;
+    }
+    #unique_flex{
+        flex-direction: column;
+    }
+    #unique_content{
+        font-size: 16px;
+    }
+
+    #roadmap_total{
+        margin: 20px;
+    }
+    #roadmap_title{
+        font-size: 30px;
+    }
+    #roadmap_subtitle{
+        font-size: 16px;
+    }
+
+    #founderbroker_total{
+        margin: 20px;
+    }
+    #founderbroker_title{
+        font-size: 30px;
+    }
+    #founderbroker_subtitle{
+        font-size: 16px;
+    }
+
+    #members_total{
+        margin: 20px;
+    }
+    #members_title{
+        font-size: 30px;
+    }
+    #members_subtitle{
+        font-size: 16px;
+    }
+    #members_flex{
+        flex-direction: column;
+    }
+    #members_content{
+        font-size: 16px;
+    }
+    #features_flex{
+        align-items: center;
+    }
+    #brandmission_flex{
+        align-items: center;
+    }
+    #unique_flex{
+        align-items: center;
+    }
+    #members_flex{
+        align-items: center;
+    }
+    #footer_up{
+        display: none;
+    }
+    #footer_down{
+        flex-direction: column;
+    }
+    #footer_down_left{
+        width: 100%;
+    }
+    #footer_down_center{
+        width: 100%;
+    }
+    #footer_down_right{
+        width: 100%;
+    }
+    
+}
+
+#footer_up_center{
+    align-items: center;
+    display: flex;
+}
+#footer_up_right_p_m{
+    margin-top: 75px;
+}
+
+
+#navbar2{
+    position: absolute;
+    background-color: #F9DDD0;
+    border: #777 solid 1px;
+}
+#navbar2 ul li{
+    
+    margin: 10px;
+    z-index: 90;
+}
+
+.nft_state{
+    font-size: 30px;
+}
+.select_btn{
+    background-color: blue;
+    padding: 10px;
+    margin: 10px 90px;
+    color: white;
+    border-radius: 20px;
+}
+.donotselect_btn{
+    background-color: gray;
+    padding: 10px;
+    margin: 10px 90px;
+    color: white;
+    border-radius: 20px;
+}
+.select_btn_hide{
+    visibility: hidden;
+}
+.mint_hide{
+    visibility: visible;
+}
+.mint_hide_show{
+    visibility: visible;
+    margin: 10px;
+}
